@@ -42,10 +42,10 @@ const app = new Vue({
     },
     methods: {
         previous: function() {
-            this.state--;
+            if(this.state>1){this.state--;}
         },
         next: function() {
-            this.state++;
+            if(this.state<3){this.state++;}
         }
     }
 
